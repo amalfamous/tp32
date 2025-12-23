@@ -92,7 +92,7 @@ services:
     build:
       context: ../car
     ports:
-      - "${CAR_PORT:-8089}:8089"
+      - "${CAR_PORT:-8095}:8089"
     depends_on:
       mysql:
         condition: service_healthy
